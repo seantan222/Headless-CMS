@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><div class=""></div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/9c9b833cfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Headless CMS</title>
+</head>
+
+
+
+<body>
+  <div id="container" class="d-flex p">
+      <div id="dashboard">
+        <h5><img src="assets\image\logo.png" id="logo" alt="web-logo"> Dashboard</h5> 
+          <ul id="menu">
+            <li><i class="fa-solid fa-chart-pie" style="color: #60626e;"></i></i>Overview</li>
+            <li><i class="fa-solid fa-ticket" style="color: #60626e;"></i>Tickets</li>
+            <li><i class="fa-solid fa-lightbulb" style="color: #60626e;"></i>  Ideas</li>
+            <li><i class="fa-solid fa-users" style="color: #60626e;"></i>Contacts</li>
+            <li><i class="fa-solid fa-user" style="color: #60626e;"></i>Agents</li>
+            <li><i class="fa-solid fa-book" style="color: #60626e;"></i>Articles</li>
+          </ul>
+
+          <div class="white-line"></div>
+
+          <ul id="menu">
+            <li><i class="fa-solid fa-gear" style="color: #60626e;"></i>Settings</li>
+            <li><i class="fa-solid fa-award" style="color: #60626e;"></i>Subscriptions</li>
+          </ul>
+      </div>
+      <!-- OVERVIEW / USER PROFILE -->
+      <div id="overview">
+        <!-- class="d-flex justify-content-between" -->
+        <div id="nav-bar" >
+          <div>
+            <h3>Overview</h3>
+          </div>
+
+          <div>
+            <ol class="nav-links">
+              <li><i class="fa-solid fa-magnifying-glass" style="color: #60626e;"></i></li>
+              <li><i class="fa-solid fa-bell" style="color: #60626e;"></i></li>
+
+              <div class="vertical-line"></div>
+
+              <li><p></p></i></li>
+              <li><img src="assets\image\sean.jpg" id="user-profile" alt="User Profile"></i></li>
+            </ol>
+          </div>
+      </div>
+      <!-- OVERVIEW CARD -->
+      <div id="ov-card">
+          <div id="card" class="card" style="width: 16rem; height: 8rem">
+            <div class="card-body">
+              <p class="card-title">Unresolved</p>
+              <h2 class="card-text" id="ovcard-1"></h2>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 16rem; height: 8rem">
+            <div class="card-body">
+              <p class="card-title">Overdue</p>
+              <h2 class="card-text" id="ovcard-2"></h2>
+            </div>
+          </div> 
+
+          <div class="card" style="width: 16rem; height: 8rem">
+            <div class="card-body">
+              <p class="card-title">Open</p>
+              <h2 class="card-text" id="ovcard-3"></h2>
+            </div>
+          </div> 
+
+          <div class="card" style="width: 16rem; height: 8rem">
+            <div class="card-body">
+              <p class="card-title">Hold</p>
+              <h2 class="card-text" id="ovcard-4"></h2>
+            </div>
+          </div> 
+      </div>
+      <!-- CHART -->
+      <div id="chart-area">
+        <div>
+        <img src="assets\image\today-trend.png" class="chart-image" alt="stonks"/>
+        </div>
+
+        <div class="trend-stats">
+          <div class="card" style="width: 20rem; height: 6rem; border-radius: 0 3% 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Resolved</p>
+              <h3 class="trend-card-text" id="trend-val-1"></h3>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem; height: 6rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Received</p>
+              <h3 class="trend-card-text" id="trend-val-2"></h3>
+            </div>
+          </div> 
+
+          <div class="card" style="width: 20rem; height: 6rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Average First Response Time</p>
+              <h3 class="trend-card-text" id="trend-val-3"></h3>
+            </div>
+          </div> 
+          
+          <div class="card" style="width: 20rem; height: 6rem; border-radius: 0 0 0 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Average Response Time</p>
+              <h3 class="trend-card-text" id="trend-val-4"></h3>
+            </div>
+          </div> 
+
+          <div class="card" style="width: 20rem; height: 6rem; border-radius: 0 0 3% 0;">
+            <div class="card-body">
+              <p class="trend-card-title">Resolution within SLA</p>
+              <h3 class="trend-card-text" id="trend-val-5"></h3>
+            </div>
+          </div> 
+        </div>
+      </div>
+      
+      <div id="tickets-area">
+
+        <div id="unresolved-tickets">
+          <div id="ut-head">
+            <div id="ut-head-group">
+              <h4>Unresolved tickets</h4>
+              <p><span style="color:gray">Group:</span> Support</p>
+            </div>
+
+            <div id="view-details">
+              <a href="url" data-bs-toggle="modal" data-bs-target="#exampleModal1">View details</a>
+            </div>
+          </div>
+
+          <table id="unresolved-tickets-table">
+            <tr>
+              <td class="td-col-1">Waiting on Feature Request</td>
+              <td class="td-col-2" id="unres-tix-1"></td>
+            </tr>
+            <tr>
+              <td class="td-col-1">Awaiting Customer Response</td>
+              <td class="td-col-2" id="unres-tix-2"></td>
+            </tr>
+            <tr>
+              <td class="td-col-1">Awaiting Developer Fix</td>
+              <td class="td-col-2" id="unres-tix-3"></td>
+            </tr>
+            <tr>
+              <td class="td-col-1">Pending</td>
+              <td class="td-col-2" id="unres-tix-4"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="tasks">
+          <div id="unresolved-tickets">
+            <div id="ut-head">
+              <div id="ut-head-group">
+                <h4>Tasks</h4>
+                <p><span style="color:gray">Today</span></p>
+              </div>
+  
+              <div id="view-details">
+                <a href="url" data-bs-toggle="modal" data-bs-target="#exampleModal2">View all</a>
+              </div>
+            </div>
+  
+            <table id="tasks-table">
+              <tr>
+                <td class="details-td-col-1"><span style="color:gray">Create New Task</span></td>
+                <td class="highlighted"><i class="fa-solid fa-square-plus fa-xl" style="color: #c8cbd0;"></i></i></td>
+              </tr>
+
+              <tr>
+                <td class="details-td-col-1">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                    Finish Ticket Update
+                  </label>
+                </td>
+                <td class="highlighted-buttons"><span id="urgent" class="sample">URGENT</span></td>
+              </tr>
+
+              <tr>
+                <td class="details-td-col-1">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                    Create New Ticket
+                  </label>
+                </td>
+                <td class="highlighted-buttons"><span id="new" class="sample">NEW</span></td>
+              </tr>
+
+              <tr>
+                <td class="details-td-col-1">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" span class="custom-checkbox" for="flexRadioDefault1">
+                    Update Ticket Report
+                  </label>
+                </td>
+                <td class="highlighted-buttons"><span id="default" class="sample">DEFAULT</span></td>
+              </tr>
+
+
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal #1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal #1</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Congratulations! You clicked on the "View details" link in our "Unresolved Tickets" Tab.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal #2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal #2</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Congratulations! You clicked on the "View all" link in our tasks tab.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

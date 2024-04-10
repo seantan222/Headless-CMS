@@ -1,0 +1,65 @@
+{ 
+    "siteName": "My Site",
+    "contactEmail": "sbtan@myseneca.ca", 
+    "phone": "416-123-456",
+    "name": "Gregorio del Pilar",
+    "mainNav": [{
+
+    "url": "/",    
+    "text": "Overview",
+    "icon": "fa-chart-pie",
+    "newTab": false 
+    }, 
+    
+    { 
+    "url": "/tickets.html",
+    "text": "Tickets",
+    "icon": "fa-ticket",
+    "newTab": false },
+
+    { 
+    "url": "/ideas.html",
+    "text": "Ideas",
+    "icon": "fa-lightbulb",
+    "newTab": false
+    },
+        
+    {
+    "url": "/contact.html",
+    "text": "Contacts",
+    "icon": "fa-users",
+    "newTab": true 
+    },
+             
+    {
+    "url": "/agents.html",
+    "text": "Agents",
+    "icon": "fa-user",
+    "newTab": false
+    },
+    
+    {
+    "url": "/articles.html",
+    "text": "Articles",
+    "icon": "fa-book",
+    "newTab": false
+    }  
+    ],
+
+    "unresolved": "1,563",
+    "overdue": "168",
+    "open": "413",
+    "hold": "1,156",
+
+    "resolved": "449",
+    "received": "426",
+    "avgFirstResp": "33 m",
+    "avgResp": "3h 8m",
+    "resWithSLA": "94%",
+
+    "waitingOnFeatReq": "4,238",
+    "awaitingCustRep": "198",
+    "awaitingDevFix": "788",
+    "pending": "38"
+    
+}

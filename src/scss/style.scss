@@ -1,0 +1,280 @@
+/* #container {
+    display: flex;
+} */
+
+
+/* DASHBOARD */
+#dashboard{
+    background-color: rgb(59, 59, 65);
+    height: 1100px;
+    width: 300px;
+    color: #a0a1a5;
+}
+#logo {
+    height: 35px;
+    width: 35px;
+}
+
+#dashboard h5{
+    margin: 20px 15px;
+    padding: 0px 10px;
+}
+
+#dashboard #menu {
+    margin-top: 40px;
+}
+#dashboard ul {
+    padding-left: 0;
+}
+
+#dashboard ul li {
+    list-style: none;
+    padding: 5px 0px;
+}
+#menu li i {
+    margin-right: 10px;
+    padding: 15px;
+}
+
+#menu li:hover {
+    background-color:#4a4b54; /* New background color on hover */
+  }
+
+.white-line {
+    height: 1px;
+    background-color: #4a4b54;
+}
+
+/* OVERVIEW - USER PROFILE */
+#overview {
+    padding: 10px;
+    width: 100%;
+    /* background-color: orange; */
+    
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 0;
+    /* justify-content: center; */
+    /* margin-top: 10px; */
+}
+
+.vertical-line {
+    width: 1px; /* Adjust width as needed */
+    height: 35px; /* Adjust height as needed */
+    margin:5px 20px;
+    align-content: center;
+    background-color: #9c9eaa; /* Adjust color as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+#user-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+/* OVERVIEW - CARDS */
+#ov-card{
+    display:flex;
+    justify-content: center;
+}
+
+#ov-card .card{
+    margin: 10px 10px;
+}
+
+.card:hover {
+    color: rgb(44, 44, 228);
+    border-color: rgb(44, 44, 228);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* OVERVIEW - CHART */
+#chart-area {
+    display:flex;
+    justify-content: center;
+}
+
+.chart-image {
+    margin-top: 10px;
+    /* background-image: url("\assets\image\stonks.jpg"); */
+    border: 1px solid #b8b9c0;
+    border-radius: 1% 0 0 1%;
+    width: 760px;
+    height: 480px;
+    padding: 15px;
+}
+
+.trend-stats {
+    margin: 10px 0px; 
+}
+
+.trend-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.trend-card-title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// TICKETS AREA
+
+// UNRESOLVED TICKET
+#tickets-area {
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#unresolved-tickets {
+    border: 1px solid #9c9eaa;
+    border-radius: 2%;
+    height: 320px;
+    width: 530px;
+    margin: 0 20px 0 0;
+}
+
+#ut-head {
+    margin: 30px;
+    display: flex;
+    
+}
+#ut-head-group {
+    width: 50%;
+}
+
+#ut-head-group p {
+    font-size: 14px;
+}
+
+#view-details {
+    text-align: right;
+    width: 50%;
+}
+
+#view-details a{
+    text-decoration: none;
+}
+
+#unresolved-tickets-table {
+    width: 100%; 
+    // border-collapse: collapse;
+    // border-bottom: 2px solid black;
+    padding-top: 20px;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+td {
+    padding: 8px;
+  }
+
+.td-col-1 {
+    text-align: left;
+}
+
+.td-col-2 {
+    color: gray;
+}
+
+
+// TASKS
+#tasks {
+    border-radius: 2%;
+    height: 320px;
+    width: 530px;
+    // margin: 0 0 0 20px;
+}
+
+// .details-td-col-1 {
+//     text-align: left;
+// }
+
+#tasks-table {
+    // border-collapse: collapse;
+    // border-bottom: 2px solid black;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.form-check-label {
+    padding-left: 15px;
+    
+}
+
+.highlighted {
+   text-align: right;
+   padding-right: 20px;
+}
+
+.highlighted-buttons {
+    width: 300px;
+    text-align: right;
+}
+
+.sample {
+    // width: 100px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 20px;
+    
+}
+
+#urgent {
+    background-color: rgb(235, 181, 17);
+}
+
+#new {
+    background-color: rgb(3, 189, 47);
+}
+
+#default {
+    background-color: rgb(151, 150, 146);
+}
